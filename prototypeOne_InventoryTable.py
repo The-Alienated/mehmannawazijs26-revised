@@ -90,6 +90,7 @@ with st.expander("Log Additional Items"):
     plastic_aprons = st.text_input("Plastic Aprons", value="0", key="plastic_aprons")
     cloth_aprons = st.text_input("Cloth Aprons", value="0", key="cloth_aprons")
     safety_vests = st.text_input("Safety Vests", value="0", key="safety_vests")
+    garbage_bags = st.text_input("Garbage Bags", value="0", key="garbage_bags")
 
 #Provide the Option to Submit the Data to the Database
 if st.button("Submit Data"):    # insert or update the data into the database; additions should accumulate
@@ -144,6 +145,7 @@ if st.button("Submit Data"):    # insert or update the data into the database; a
     upsert_item("Plastic Aprons", plastic_aprons)
     upsert_item("Cloth Aprons", cloth_aprons)
     upsert_item("Safety Vests", safety_vests)
+    upsert_item("Garbage Bags", garbage_bags)
     
     connection.commit()
     st.success("Data submitted successfully!")
