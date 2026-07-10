@@ -168,11 +168,19 @@ with st.expander("Filter Data", expanded=True):
         ("Truck Inventory", "Non Spicy", "Seniors","Station 1", "Station 2", "Station 3", "Station 4", "Station 5", "Station 6", "Station 7", "Station 8", "Station 9", "Station 10", "Volunteer Marquee", "JS Office", "Bread Dept.", "Discipline Dept.")
     )
 
+    item_filter = st.selectbox(
+          "Filter by Item",
+          ("All Items", "Cups", "Plates", "Bowls", "Spoons", "Tissues", "Jugs", "Small Ladels", "Rice Spoons", "Hairnets", "Gloves", "Plastic Aprons", "Cloth Aprons", "Safety Vests", "Garbage Bags")
+      )
+
     if day_filter != "All Days":
         df = df[df["day"] == day_filter]
 
     if station_filter != "All Stations":
         df = df[df["station_id"] == station_filter]
+
+    if item_filter != "All Items":
+        df = df[df["item_name"] == item_filter]
 
     st.dataframe(df)
 
