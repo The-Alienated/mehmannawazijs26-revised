@@ -14,7 +14,7 @@ GOALS:
 #written by: Anees Ahmad Rana for Mehman Nawazi JS26
 #75% written without the aid of artificial intelligence, 25% written with the aid of artificial intelligence
 import sqlite3
-from click import option
+#from click import option
 import streamlit as st
 import pandas as pd
 
