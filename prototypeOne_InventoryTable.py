@@ -70,7 +70,7 @@ with st.expander("Basic Information", expanded=True):
 
     station_option = st.selectbox(
         "What Station are you visiting?",
-        ("Truck Inventory", "Station 1 - Non Spicy", "Station 2", "Station 3", "Station 4", "Station 5", "Station 6", "Station 7", "Station 8", "Station 9", "Station 10", "Volunteer Marquee", "Jalsa Salana Office"),
+        ("Truck Inventory", "Non Spicy", "Seniors","Station 1", "Station 2", "Station 3", "Station 4", "Station 5", "Station 6", "Station 7", "Station 8", "Station 9", "Station 10", "Volunteer Marquee", "JS Office", "Bread Dept.", "Discipline Dept."),
     )
 
 #Provide the Option to Input the Number of Each Item at the Station
@@ -163,7 +163,7 @@ with st.expander("Filter Data", expanded=True):
 
     station_filter = st.selectbox(
         "Filter by Station",
-        ("All Stations", "Truck Inventory", "Station 1 - Non Spicy", "Station 2", "Station 3", "Station 4", "Station 5", "Station 6", "Station 7", "Station 8", "Station 9", "Station 10", "Volunteer Marquee", "Jalsa Salana Office")
+        ("Truck Inventory", "Non Spicy", "Seniors","Station 1", "Station 2", "Station 3", "Station 4", "Station 5", "Station 6", "Station 7", "Station 8", "Station 9", "Station 10", "Volunteer Marquee", "JS Office", "Bread Dept.", "Discipline Dept.")
     )
 
     if day_filter != "All Days":
