@@ -31,7 +31,7 @@ cursor = connection.cursor()
 cursor.execute('''
     CREATE TABLE IF NOT EXISTS spreadsheet ( 
         day INTEGER NOT NULL,
-        station_id INTEGER,
+        station_id TEXT NOT NULL,
         item_name TEXT NOT NULL,
         initial_inventory INTEGER NOT NULL,
         additions INTEGER NOT NULL,
